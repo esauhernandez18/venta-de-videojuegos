@@ -10,19 +10,19 @@ import videogame.entity.Usuario;
 
 public interface IUsuarioModel {
     /*
-    * Metodo para insertar un usuario a la BD
+    * Metodo para insertar un usuario
     */
     public void insertarRegistro(Usuario usuario);
     /*
-    * Metodo para consultar usuarios de la BD
+    * Metodo para consultar usuarios
     */
     public List<Usuario> obtenerRegistros();
     /*
-    * Metodo para actualizar un usuario a la BD
+    * Metodo para actualizar un usuario
     */
     public void actualizarRegistro (Usuario usuario);
     /*
-    * Metodo para eliminar un usuario a la BD
+    * Metodo para eliminar un usuario
     */
     public void eliminarRegistro (Usuario usuario);
 }

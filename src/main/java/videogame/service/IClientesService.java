@@ -10,19 +10,19 @@ import videogame.entity.Clientes;
 
 public interface IClientesService {
 /*
-    * Metodo para insertar un usuario a la BD
+    * Metodo para insertar un cliente
     */
     public void insertarRegistro(Clientes clientes);
     /*
-    * Metodo para consultar usuarios de la BD
+    * Metodo para consultar cliente
     */
     public List<Clientes> obtenerRegistros();
     /*
-    * Metodo para actualizar un usuario a la BD
+    * Metodo para actualizar un cliente
     */
     public void actualizarRegistro (Clientes clientes);
     /*
-    * Metodo para eliminar un usuario a la BD
+    * Metodo para eliminar un cliente
     */
     public void eliminarRegistro (Clientes clientes);
 }

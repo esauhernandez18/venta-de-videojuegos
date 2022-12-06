@@ -14,7 +14,7 @@ public class ClientesServiceImpl implements IClientesService{
    private IClientesModel model = new IClientesModelImpl();
     
     /*
-    * Metodo para insertar un usuario a la BD
+    * Metodo para insertar un cliente
     */
     @Override
     public void insertarRegistro(Clientes clientes) {
@@ -22,7 +22,7 @@ public class ClientesServiceImpl implements IClientesService{
     }
     
     /*
-    * Metodo para consultar usuarios de la BD
+    * Metodo para consultar cliente
     */
     @Override
     public List<Clientes> obtenerRegistros() {
@@ -30,7 +30,7 @@ public class ClientesServiceImpl implements IClientesService{
     }
     
     /*
-    * Metodo para actualizar un usuario a la BD
+    * Metodo para actualizar un cliente
     */
     @Override
     public void actualizarRegistro(Clientes clientes) {
@@ -38,7 +38,7 @@ public class ClientesServiceImpl implements IClientesService{
     }
     
     /*
-    * Metodo para eliminar un usuario a la BD
+    * Metodo para eliminar un cliente
     */
     @Override
     public void eliminarRegistro(Clientes clientes) {

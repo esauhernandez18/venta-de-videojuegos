@@ -18,7 +18,7 @@ public class IUsuarioModelImpl implements IUsuarioModel {
     private Session session;
 
     /*
-    * Metodo para insertar un usuario a la BD
+    * Metodo para insertar un usuario 
     */
     @Override
     public void insertarRegistro(Usuario usuario) {
@@ -36,7 +36,7 @@ public class IUsuarioModelImpl implements IUsuarioModel {
     }
 
     /*
-    * Metodo para consultar usuarios de la BD
+    * Metodo para consultar usuarios 
     */
     @Override
     public List<Usuario> obtenerRegistros() {
@@ -54,7 +54,7 @@ public class IUsuarioModelImpl implements IUsuarioModel {
     }
 
     /*
-    * Metodo para actualizar un usuario a la BD
+    * Metodo para actualizar un usuario
     */
     @Override
     public void actualizarRegistro(Usuario usuario) {
@@ -72,7 +72,7 @@ public class IUsuarioModelImpl implements IUsuarioModel {
     }
 
     /*
-    * Metodo para eliminar un usuario a la BD
+    * Metodo para eliminar un usuario
     */
     @Override
     public void eliminarRegistro(Usuario usuario) {

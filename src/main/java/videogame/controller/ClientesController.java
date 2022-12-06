@@ -31,9 +31,9 @@ public class ClientesController {
         clientes = new Clientes();
         listaRegistros = service.obtenerRegistros();
     }
-/*
-*metodo para crear un registro de usuario 
-*/
+    /*
+    Metodo para crear un registro de usuario 
+    */
     public void CrearRegistro() {
         service.insertarRegistro(clientes);
         listaRegistros = service.obtenerRegistros();
@@ -47,14 +47,13 @@ public class ClientesController {
         this.clientes = clientes;
     }
 /*
-    *metodo para listar los platillos que se encuentan en la tabla usuarios
+    *metodo para listar los clientes
     */
     public List<Clientes> getListaRegistros() {
         return listaRegistros;
     }
 /*
-    metodo para editar un registro de usuario que se encuentra en la tabla 
-    mediante el evento rowedit
+    metodo para editar un registro de usuario 
     */
     public void onRowEdit(RowEditEvent event) {
         Clientes clientes = (Clientes) event.getObject();
@@ -65,9 +64,8 @@ public class ClientesController {
         FacesContext.getCurrentInstance().
                 addMessage(null, mensaje);
     }
-/*
-    metodo para eliminar un registro de usuario que se encuentra en la tabla 
-    mediante el evento rowedit
+    /*
+    metodo para eliminar un registro de usuario 
     */
     public void EliminarRegistro(Clientes clientes) {
         service.eliminarRegistro(clientes);
